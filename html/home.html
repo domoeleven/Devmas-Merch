@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="/css/home-styles.css">
+        <script src="https://kit.fontawesome.com/d3ec22af32.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header c-block invert">
+            <a href="/html/home.html"><h1 class="h-logo">Faux Mousse</h1></a>              <!-- Link to top of main page -->
+            <div class="h-menu">
+                <nav>
+                    <ul class="h-menu__dropdown" id="navbar">
+                        <li><a class="a-1" href="/html/catalogue.html">Catalogue</a></li>
+                        <li><a class="a-1"  href="/html/discover.html">Discover</a></li>
+                        <li><a class="a-1"  href="/html/coupons.html">Coupons</a></li>
+                    </ul>
+                </nav>
+                <button class="h-menu__btn btn" id="menu-btn">
+                    <i class="fa-sharp fa-solid fa-bars fa-xl"></i>
+                </button>
+                <button class="h-menu__btn btn" id="profile-btn">
+                    <a class="a-1" href="/html/profile.html"><i class="fa-regular fa-user fa-xl"></i></a>
+                </button>
+                <button class="h-menu__btn btn" id="cart-btn">
+                    <a class="a-1" href="/html/cart.html"><i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <!-- END OF HEADER-->
+            <section id="search" class="main-search c-block">
+                <header>
+                    <span class="main-search__msg">Welcome.</span>
+                </header>
+                <div class="main-search__bar">
+                    <input class="main-search__input invert" placeholder="Search from over 1,000,000 styles..." />
+                    <button class="main-search__btn btn">
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </button>
+                </div>
+            </section>
+            <!-- END OF SEARCH-->
+            <section id="featured" >
+                <div class="section-seperator c-block">
+                    <hr class="section-top" />
+                    <h2 class="section-title invert">Editor's Collection</h2>
+                </div>
+
+                <!-- Reuse for later pages
+                <div class="product-filter">
+                    <button class="filter-btn btn">Type</button>
+                    <button class="filter-btn btn">Category</button>
+                    <button class="filter-btn btn">Color</button>
+                    <button class="filter-btn btn">Price</button>
+                </div>
+                -->
+
+                <section class="product-slide__wrap c-block">
+                    <button class="click-backward center btn" id="click-backward"><i class="fa-solid fa-caret-left fa-2xl"></i></button>            
+                    <div class="product-slide" id="product-slide">
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 1</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 2</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 3</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 4</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 5</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 6</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 7</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 8</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 9</a></p>
+                        </article>
+                        <article class="product-tile">
+                            <a><img class="product-img" src="/images/home/empty-product.jpg"></a>
+                            <p class="product-name"><a>Product 10</a></p>
+                        </article>
+                    </div>
+                    <button class="click-forward center btn" id="click-forward"><i class="fa-solid fa-caret-right fa-2xl"></i></button>
+                </section>
+                <hr class="section-btm">
+            </section>
+            <section id="categories">
+                <div class="cat-wrap c-block">
+                    <div class="cat-container">
+                        <aside class="cat-title">
+                            <img class="cat-logo" src="/images/home/cat-logo.png">
+                            <span>CATEGORIES</span>
+                        </aside>
+                        <div class="cat-images">
+                            <img src="/images/home/woman-low-angle.jpg">
+                            <img src="/images/home/man-low-angle.jpg">
+                            <img src="/images/home/clothes-rack.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <p>USEFUL LINKS</p>
+                <div class="footer-col__1 f-style">
+                    <p><a href="/html/catalogue.html">Catalogue</a></p>
+                    <p><a href="/html/discover.html">Discover</a></p>
+                    <p><a href="/html/coupons.html">Coupons</a></p>
+                </div>
+            </div>
+            <div class="footer-container">
+                <p>NEWSLETTER</p>
+                <div class="footer-col__2 f-style">
+                    <form>
+                        <label for="newsletter-input" hidden="true">Email</label>
+                        <input class="newsletter-input" id="newsletter-email" placeholder="example@gmail.com" required>
+                        <button id="submit-email">Sign me up!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-container">
+                <p>CONTACT</p>
+                <div class="footer-col__3 f-style">
+                    <p>You can find us here...</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/js/home/home-main.js"></script>
+    </body>
+</html>

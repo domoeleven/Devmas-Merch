@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="/css/cart-styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="nav-header">
+            <div class="header-wrap">
+                <div class="menu-logo" id="menuLogo">
+                    <button class="menu-btn btn" id="menuBtn"><i class="fa-solid fa-bars" id="menuIcon"></i></button>
+                    <span class="logo"><a href="/html/home.html">Faux Mousse</a></span>
+                </div>
+                <div class="profile-cart">
+                    <button class="profile-btn btn"><i class="fa-solid fa-user"></i></button>
+                    <button class="cart-btn btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+            <nav id="navBar">
+                <ul class="menu-list">
+                    <li><a href="/html/catalogue.html">Catalogue</a></li>  
+                    <li><a href="/html/discover.html">Discover</a></li>  
+                    <li><a href="/html/coupons.html">Create</a></li> 
+                </ul>
+                <img class="menu-img" src="/images/cart/tree.jpg"> 
+            </nav>
+        </header>
+        <section class="my-cart">
+            <header class="content-title">
+                <h1>Shopping Cart</h1>
+            </header>
+            <div class="show-cart">
+                <h2>Your cart is empty!</h2>
+                <span class="cart-span">Sign in to save your cart</span>
+                <button class="login-btn btn2">Login</button>
+            </div>
+        </section>
+    </body>
+    <script src="https://kit.fontawesome.com/d3ec22af32.js" crossorigin="anonymous"></script>
+    <script src="/js/cart/cart-main.js"></script>
+</html>

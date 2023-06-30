@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTS */
+body {
+    display: block;
+}
+
+h1, h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+p {
+    font-family: 'Cardo', serif;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 15px;
+}
+
+/* CUSTOM ELEMENTS */
+.btn {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.a-1 {
+    color: #fff;
+}
+
+.a-2 {
+    color: #000;
+}
+
+/* CONTENT STANDARDIZATION */
+.c-block {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.section-seperator {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-top {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    margin: 60px 0 20px 0;
+    border: none;
+    background-color: black;
+}
+
+.section-btm {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    margin-top: 20px;
+    border: none;
+    background-color: black;
+}
+
+.section-title {
+    position: absolute;
+    padding: 7px 10px 0 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.invert {
+    background-color: black;
+    color: white;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* START HEADER */
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-logo {
+    padding: 0 15px;
+    user-select: none;
+}
+
+.h-menu__btn {
+    height: 70px;
+    color: #fff;
+}
+
+.h-menu__btn:hover {
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000
+}
+
+.h-menu {
+    display: flex;
+}
+
+.h-menu__dropdown {
+    position: absolute;
+    top: 0;
+    right: 175.5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    width: 700px;
+    height: 60px;
+    background: black;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h-menu__dropdown li {
+    list-style-type: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/* END HEADER */
+
+/* START SEARCH */
+.main-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    margin-top: 60px;
+}
+
+.main-search__msg {
+    font-size: 8rem;
+    font-family: 'Josephin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.main-search__bar {
+    display: flex;
+    height: 45px;
+}
+
+.main-search__input {
+    width: 800px;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-search__input::placeholder {
+    font-style: italic;
+    font-family: 'Cardo', serif;
+    color: white;
+    opacity: 90%;
+}
+
+.main-search__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+/* END SEARCH */
+
+/* START FEATURED */
+
+.click-backward {
+    width: 20px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    margin: 0 20px;
+}
+
+.click-forward {
+    width: 20px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 0px 10px 10px 0;
+    margin: 0 20px;
+}
+
+.product-slide__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.product-slide {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.product-slide::-webkit-scrollbar {
+    display: none;
+}
+
+.product-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 47.3px;
+}
+
+.product-img {
+    height: 250px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-name {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+/* END FEATURED */
+/* START CATEGORIES */
+
+.cat-wrap {
+    width: 100%;
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cat-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 850px;
+    width: 75%;
+    background-color: black;
+}
+
+.cat-title {
+    display: flex;
+    position: absolute;
+    right: 700px;
+    top: 1960px;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    align-self: end;
+    align-items: end;
+    height: 175px;
+}
+
+.cat-title span {
+    margin-left: 25px;
+    height: 100px;
+    font-size: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.cat-logo {
+    height: 125px;
+    width: 125px;
+}
+
+.cat-images {
+    margin-left: 50px;
+    position: relative;
+}
+
+.cat-images img {
+    box-sizing: border-box;
+    margin: 0 50px;
+    width: 300px;
+    height: 750px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* FUCK THIS SHIT FOOTER TIME */
+
+.f-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-color: black;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    width: 15%
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-col__2 form {
+    width: 100%;
+    height: 65px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#submit-email {
+    cursor: pointer;
+}
+
+.social-icons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+}
+
+.newsletter-input::placeholder {
+    color: black;
+}

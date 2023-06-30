@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+h2 {
+    color: white;
+    font-size: 2.1rem;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+span {
+    color: white;
+}
+/* UNIFORM STYLE ELEMENTS */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: none;
+}
+
+/* ELSE */
+
+.nav-header {
+    width: 100vw;
+    height: 50px;
+}
+
+.header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    padding: 0 1em;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+/* Javascript controlled classes */
+.active {
+    transform: translateX(11.5vw);
+}
+
+.invert {
+    background-color: #fff;
+    color: #000;
+}
+
+.open {
+    visibility: visible;
+}
+/* ----------------------------- */
+
+nav {
+    width: 15vw;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    visibility: hidden;
+}
+
+.menu-list {
+    width: 15vw;
+    list-style: none;
+    background: none;
+    padding-top: 100px;
+}
+
+.menu-list li {
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 4em;
+    font-size: 3rem;
+}
+
+.menu-img {
+    position: absolute;
+    bottom: 0;
+    width: 15vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+i:hover {
+    transform: scale(1.1);
+    transition: .2s;
+    user-select: none;
+}
+
+.logo {
+    font-family: "Josefin Sans", sans-serif;
+    height: 35px;
+    font-size: 2.3rem;
+    color: white;
+    user-select: none;
+    margin-left: 1rem;
+}
+
+.profile-cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0;
+}
+
+.profile-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.cart-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.my-cart {
+    display: flex;
+    align-content: center;
+}
+
+.content-title {
+
+}
+
+.show-cart {
+    width: 500px;
+    height: 300px;
+}
+
+.login-btn {
+    display: inline;
+}
